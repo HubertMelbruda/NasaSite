@@ -1,16 +1,18 @@
 .Body {
-    background-color: #e0ebeb;
+    background-color: rgb(224, 222, 222);
     font-family: 'Oswald', monospace;
 }
 
 .Heading {
     font-size: 40px;
+    text-align: center;
     text-transform: uppercase;
 }
 
 .SubHeading {
     font-size: 20px;
     font-family: 'Oswald', monospace;
+    text-align: center;
 }
 
 .DivRow {
@@ -24,16 +26,16 @@
 .DivRowElement {
     display: flex; /* ustawiasz wartosc display: flex; */
     flex-flow: column nowrap; /* przy pomocy flex-flow ustawiasz sobie wartosc column albo row, druga wartosc to czy ma element zawijac sie do nastepnego wiersza czy nie */
-    align-items: center; /* przy pomocy align-items (dziala tylko z display: flex) ustawiasz pozycje elmentow zawartych w divie w pionie */ 
+    align-items: center; /* przy pomocy align-items (dziala tylko z display: flex) ustawiasz pozycje elmentow zawartych w divie w pionie */
     width: 29%; /* ustawiasz sobie width taki, zeby 3 divy pojawily sie w jednym rzedzie - zalezne to jest od szerokosci nadrzednego elementu tzn. ile w nim sie zmiesci podrzednych elementow */
-    height: 400px; /* ustaw sobie zawsze height na danym divie, zeby miec pewnosc, ze ladnie Ci sie miesci wszystko albo height: auto, jesli chcesz zeby byly zalezne od wielkosci elmentow, ktore sie tam znajduja */
+    height: 450; /* ustaw sobie zawsze height na danym divie, zeby miec pewnosc, ze ladnie Ci sie miesci wszystko albo height: auto, jesli chcesz zeby byly zalezne od wielkosci elmentow, ktore sie tam znajduja */
     padding: 20px;
-    background-color: silver;
+    background-color: whitesmoke;
+
 }
 
-
 .Image {
-    width: 80%; /* procentowe wartosci pozwalaja dostosowac sie zawsze wielkosciowo do elementu nadrzednego; 80% szerokosci nadrzednego elementu */
+    width: 90%; /* procentowe wartosci pozwalaja dostosowac sie zawsze wielkosciowo do elementu nadrzednego; 80% szerokosci nadrzednego elementu */
 }
 
 .Caption {
@@ -45,3 +47,24 @@
     text-align: justify;
     font-weight: 500;
 }
+
+.navigation {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    list-style: none;
+    margin: 0;
+    background: white;
+}
+    .navigation a {
+        font-size: 20px;
+        font-family: 'Oswald', monospace;
+        text-decoration: none;
+        display: block;
+        padding: 1em;
+        color: black;
+    }
+
+      .navigation a:hover {
+        background: #1565C0;
+    }
